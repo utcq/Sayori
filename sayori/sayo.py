@@ -124,6 +124,12 @@ class Define:
     def __init__(self, value:any):
         self.value=value
 
+    def __int__(self)->int:
+        return self.value
+    
+    def __str__(self)->str:
+        return self.value
+
 
 class TPointer:
     def __init__(self, val:any):
@@ -141,3 +147,12 @@ class OPointer:
 class OReference:
     def __init__(self, val:any):
         self.val=val
+
+
+class IncludeLocal:
+    def __init__(self, value:str):
+        self.value=value
+
+class Include:
+    def __init__(self, value:str):
+        self.value=value
