@@ -8,16 +8,11 @@ from sayori import *
 
 stdio = Include("stdio.h")
 
-magic = Define(0x8f23e)
-
-n1: uint16_t = None
-
-def add(x:int, y:int)->int:
-    return (x-1)+y
-
 
 def main() -> OPointer(int):
-    greet: str = "Hello"
-    num: int = add(1+0x50, 0x20);
-    printf("%s\n",greet)
+    username:str = "UnityTheCoder"; # ANNOTAZIONE
+    myname = "UwU" # SENZA
+    printf("%s\n", username);
     return 0
+
+# Original python source
